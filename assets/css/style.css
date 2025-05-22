@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap');
+
+:root{
+    --body-color: #5F5B53;
+    --heading-color: #171100;
+    --yellow : #FFB900;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body, .engagement h2 sub{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--body-color)
+}
+h1,h2,h4, .logo a{
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--heading-color);
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* navbar style */
+.logo a{
+    color: var(--heading-color);
+}
+.logo a span{
+    color: var(--yellow);
+}
+.main-menu ul li a{
+    color: var(--body-color);
+    transition: .3s;
+}
+.main-menu ul li a.active{
+    color: var(--heading-color);
+}
+.main-menu ul li a.active::before{
+    background-color: var(--heading-color);
+}
+.main-menu ul li a:hover{
+    color: var(--heading-color);
+}
+
+
+.navbar-button{
+    background-color: var(--heading-color);
+    border: 1px solid var(--heading-color);
+    transition: .3s;
+}
+.navbar-button a{
+    color: var(--white);
+}
+
+.navbar-button:hover{
+    background-color: var(--white);
+}
+.navbar-button:hover a{
+    color: var(--heading-color);
+}
+
+   /* hero */
+.course-attribute{
+    background: var(--white);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.attribute-content span{
+    color: var(--body-color);
+}
+.attribute-content h5{
+    color: var(--heading-color);
+}
+
+.hero-button{
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    transition: .3s;
+}
+.hero-button a{
+    color: var(--white);
+}
+.hero-button:hover{
+    background-color: var(--white);
+}
+.hero-button:hover a{
+    color: var(--yellow);
+}
+.hero-video h5{
+    color: var(--heading-color);
+}
+
+.engagement h2 sub{
+    color: var(--body-color);
+}
+
+
+/* popular courses style */
+.card-text h5, .card-bottom h5{
+    color: var(--heading-color);
+}
+.card-button, .blog-button{
+    background-color: var(--heading-color);
+    transition: .3s;
+}
+.card-button a, .blog-button a{
+    color: var(--white);
+}
+.card-button:hover, .blog-button:hover{
+    background: var(--yellow);
+}
+.card-button:hover a, .blog-button:hover a{
+    color: var(--white);
+}
+.ratings{
+    color: var(--yellow);
+}
+
+.course-cards .preve-arrow.slick-arrow, .course-cards .next-arrow.slick-arrow {
+    border: 1px solid var(--yellow);
+    transition: .3s;
+}
+
+.course-cards .preve-arrow.slick-arrow svg, .course-cards .next-arrow.slick-arrow svg {
+    fill: var(--yellow);
+}
+
+.course-cards .preve-arrow.slick-arrow:hover, .course-cards .next-arrow.slick-arrow:hover{
+    background-color: var(--yellow);
+}
+.course-cards .preve-arrow.slick-arrow:hover svg, .course-cards .next-arrow.slick-arrow:hover svg{
+    fill: var(--white);
+}
+
+
+/* testimonial section style  */
+.testimonial-text::before{
+    content: '';
+    background-image: url(../images/quate.png);
+}
+.testimonial-carousel .slick-dots li.slick-active button:before
+{
+    color: var(--yellow);
+}
+
+
+/* features section style */
+.features-image-1 img, .features-image-2 img{
+    transition: transform .5s ease;
+    
+}
+.features-image-1 img:hover, .features-image-2 img:hover, .cta-image img:hover, .blog-image img:hover{
+    transform: scale(1.1);
+} 
+.features-buttton, .cta-button{
+    background: var(--yellow);
+    transition: .3s;
+}
+.features-buttton:hover, .cta-button:hover{
+    background-color: var(--heading-color);
+}
+.features-buttton:hover a, .cta-button:hover a{
+    color: var(--white);
+}
+
+
+/* cta section style */
+.cta-image img{
+    transition: transform .5s ease;
+}
+
+
+/* blogs section style */
+.single-blog{
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+
+}
+.blog-image{
+    border-radius: 16px 16px 0 0;
+}
+.blog-image img{
+    border-radius: 16px 16px 0 0;
+    transition: transform .5s ease;
+}
+.blog-text h5{
+    color: var(--heading-color);
+}
+.blogs-cards .slick-dots li.slick-active button:before
+{
+    color: var(--yellow);
+}
+.footer-logo a{
+    color: white;;
+}

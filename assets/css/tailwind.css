@@ -1,0 +1,388 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* navbar style */
+header{
+    @apply bg-[#fffc4] pb-[65px];
+}
+.navbar{
+    @apply flex justify-between items-center pt-[37px] pb-[63px];
+}
+.logo a{
+    @apply text-[24px] font-bold leading-[34px];
+}
+.main-menu{
+    @apply flex gap-[70px] items-center;
+}
+.main-menu ul{
+    @apply flex gap-[43px];
+}
+.main-menu ul li a{
+    @apply leading-[28px];
+}
+.main-menu ul li a.active{
+    @apply font-semibold relative;
+}
+.main-menu ul li a.active::before{
+    @apply absolute bottom-[-2px] left-[2px] w-[12px] h-[2px] rounded-[1px] block;
+}
+
+
+.navbar-button{
+    @apply w-[144px] h-[50px] flex justify-center items-center rounded-[24.5px];
+}
+.navbar-button a{
+    @apply text-center font-semibold leading-[28px];
+}
+
+
+
+   /* hero */
+.hero-section{
+    @apply flex justify-between;
+}
+.hero-image{
+    @apply w-[470px] h-[685px] rounded-[20px] relative;
+}
+
+.course-attribute{
+    @apply w-[270px] h-[244px] rounded-[12px]
+    p-6 absolute -right-[100px] bottom-12 flex flex-col gap-[14px];
+}
+
+.attribute-1{
+    @apply flex gap-4 items-center;
+}
+.attribute-image{
+    @apply w-12 h-12 bg-[#fff9eb] rounded-full flex justify-center items-center;
+}
+.attribute-content span{
+    @apply text-sm leading-[26px];
+}
+.attribute-content h5{
+    @apply text-lg font-semibold leading-[30px];
+}
+
+
+.hero-content{
+    @apply w-[470px] mt-16 mb-[41px];
+}
+.hero-content h1{
+    @apply text-[58px] leading-[68px] -tracking-[1.16px] mb-[22px];
+}
+.hero-content p{
+    @apply text-lg leading-[30px];
+}
+
+.hero-button-section{
+    @apply flex items-center mt-[30px] mb-[31px] gap-3;
+}
+.hero-button{
+    @apply w-[180px] h-16 rounded-[32px] flex justify-center items-center;
+}
+.hero-button a{
+    @apply text-lg font-semibold leading-[30px];
+}
+.hero-video{
+    @apply mt-[17px];
+}
+.hero-video a{
+    @apply flex;
+    
+}
+.hero-video h5{
+    @apply font-semibold leading-[30px] text-lg mt-[14px] -ml-[2px];
+}
+
+.recent-engagement p{
+    @apply text-lg leading-[30px];
+}
+.engagement-section{
+    @apply flex mt-[9px] gap-[37px];
+}
+.engagement h2{
+    @apply text-[44px] leading-[54px] flex gap-[13px] items-baseline;
+}
+.engagement h2 sub{
+    @apply text-lg leading-[30px];
+}
+
+
+
+/* popular courses style */
+section.popular-courses {
+    @apply pt-[200px] pb-[200px];
+}
+.section-title{
+    @apply w-[458px];
+}
+.section-title h2, .features-text h2, .cta-text h2{
+    @apply text-[38px] leading-[48px] -tracking-[0.76px] mb-4;
+}
+.section-title p{
+    @apply text-lg leading-[30px];
+}
+.course-cards{
+    @apply flex mt-[55px] gap-[30px] -mx-[15px];
+}
+
+.single-card-outer{
+    @apply px-[15px];
+}
+.single-card{
+    @apply w-[370px] h-[466px] rounded-xl border border-[#E2DFDA] bg-white;
+}
+.card-text{
+    @apply relative pt-4 pr-[22px] pb-[22px] pl-[20px];
+}
+.card-text h5, .card-bottom h5{
+    @apply text-lg leading-[30px] font-semibold;
+}
+.card-text h5{
+    @apply mb-[6px];
+}
+.card-text p{
+    @apply text-sm leading-[26px];
+}
+.card-bottom{
+    @apply flex justify-between items-center mt-[13px];
+}
+.card-button, .blog-button{
+    @apply w-[118px] h-[50px] rounded-[25px] flex justify-center items-center;
+}
+.card-button a, .blog-button a{
+    @apply text-sm font-semibold leading-[26px];
+}
+.ratings{
+    @apply flex items-center absolute top-5 right-[22px] text-white gap-[7px];
+}
+
+.course-cards .preve-arrow.slick-arrow, .course-cards .next-arrow.slick-arrow {
+    @apply w-10 h-10 absolute -top-[138px] right-[73px] rounded-full flex justify-center items-center;
+}
+
+.course-cards .preve-arrow.slick-arrow svg, .course-cards .next-arrow.slick-arrow svg {
+    @apply w-[10px];
+}
+
+.course-cards .next-arrow.slick-arrow {
+    @apply right-4;
+}
+
+
+
+/* testimonial section style  */
+.testimonial-section{
+    @apply bg-[#2E2100] pt-[95px] pb-[37px];  
+}
+
+
+.single-item {
+    @apply flex justify-between;
+}
+.testimonial-client{
+    @apply w-[160px];
+}
+.testimonial-image {
+    @apply pb-[25px];
+}
+.testimonial-client h4 {
+    @apply text-[#F7F7F7] text-2xl leading-6 mb-2;
+}
+.testimonial-client p{
+    @apply text-[#BFBCB2] text-sm leading-[26px];
+}
+.testimonial-text{
+    @apply w-[740px] h-[188px] text-white text-[26px] italic leading-10 mt-[30px] relative;
+}
+.testimonial-text::before{
+    @apply absolute -top-[29px] -left-[30px] w-[33px] h-[29px] block bg-no-repeat;
+}
+
+.testimonial-carousel .slick-dots{
+    @apply bottom-[20px] -left-[573px];
+}
+.testimonial-carousel .slick-dots li{
+    @apply w-[2px] h-[2px];
+}
+.testimonial-carousel .slick-dots li button
+{
+    @apply w-[9px] h-[14px];
+    
+}
+.testimonial-carousel .slick-dots li button:before
+{
+    @apply text-[7px] leading-[5px] w-0 h-0 text-[#BFBCB2];
+}
+
+
+/* features section style */
+.features-cta-section{
+    @apply pt-[200px] pb-[170px];
+}
+.features-section{ 
+    @apply flex justify-between;
+}
+.features-image{
+    @apply flex gap-[30px];
+}
+.features-image-1, .features-image-2{
+    @apply w-[270px] h-[405px] overflow-hidden rounded-2xl;
+}
+.features-image-1{
+    @apply mt-[34px];
+}
+.features-image-1 img, .features-image-2 img{
+    @apply rounded-2xl;
+    
+}
+.features-text{
+    @apply w-[470px] mt-[58px];
+}
+.features-text div{
+    @apply leading-7 flex flex-col gap-[18px];
+}
+.features-buttton, .cta-button{
+    @apply mt-[31px] w-[137px] h-[50px] flex justify-center items-center rounded-[26px];
+}
+.features-buttton a, .cta-button a{
+    @apply text-white font-semibold leading-7;
+    
+}
+
+
+/* cta section style */
+.cta-section{
+    @apply flex justify-between items-center mt-[200px];
+}
+.cta-text{
+    @apply w-[570px];
+}
+.cta-text p{
+    @apply leading-7;
+}
+.cta-image{
+    @apply w-[470px] h-[440px] rounded-[20px] overflow-hidden;
+}
+.cta-image img{
+    @apply rounded-[20px];
+}
+
+
+/* blogs section style */
+.blogs-section{
+    @apply bg-[#FFFCF4] pt-[125px] pb-[110px];
+}
+
+.blog-title{
+    @apply m-auto text-center w-[448px];
+}
+.blog-title p{
+    @apply text-[#696262] text-base leading-7;
+}
+
+.blogs-cards{
+    @apply flex mt-[55px] -mx-[15px];
+}
+.single-blog-outer{
+    @apply px-[15px];
+}
+.single-blog{
+    @apply w-[370px] rounded-2xl bg-white;
+
+}
+.blog-image{
+    @apply w-[370px] overflow-hidden;
+}
+.blog-text{
+    @apply pt-[9px] pr-5 pb-7 pl-[19px];
+}
+.blog-date{
+    @apply flex items-center text-[#5F5B53] text-sm leading-[26px] w-[160px] h-[50px] rounded-[0.5px] border-b border-b-[#E2DFDA] mb-[13px];
+}
+.blog-date div{
+    @apply w-[6px] h-[6px] rounded-full mr-[5px];
+}
+.blog-text h5{
+    @apply text-base font-bold leading-7;
+}
+.blog-button{
+    @apply mt-[11px];
+}
+.blogs-cards .slick-dots
+{
+    @apply -bottom-[52px] left-0;
+}
+.blogs-cards .slick-dots li
+{
+    @apply w-[2px] h-[2px];
+}
+.blogs-cards .slick-dots li button
+{
+    @apply w-[9px] h-[14px];
+    
+}
+.blogs-cards .slick-dots li button:before
+{
+    @apply text-[7px] leading-[5px] w-0 h-0 text-[#5F5B53];
+}
+
+
+
+
+/* footer section style */
+.footer-section{
+    @apply bg-[#2E2100] pt-[96px];
+}
+.footer-cards{
+    @apply flex justify-between pb-[38px] text-[#BFBCB2] text-sm leading-[26px] border-b border-b-[#59554B];
+}
+.footer-cards a{
+    @apply text-[BFBCB2];
+}
+.footer-intro-outer{
+    @apply pr-[26px];
+}
+.footer-intro{
+    @apply w-[257px];
+}
+.footer-logo a{
+    @apply text-white;
+}
+.footer-intro p{
+    @apply mt-[18px] mb-[15px];
+}
+.social-links ul{
+    @apply flex gap-[10px];
+}
+.social-links svg{
+    @apply w-[20px] h-[18px] fill-white;
+}
+
+.footer-menu{
+    @apply w-[137px];
+}
+.footer-menu-company{
+    @apply w-[130px];
+}
+.menu-title{
+    @apply w-[130px] border-b border-b-[#59554B] pb-[14px];
+}
+.menu-title h5{
+    @apply text-white text-base font-semibold leading-7;
+}
+.footer-menu ul, .footer-address ul{
+    @apply mt-7 flex flex-col gap-3;
+    
+}
+.footer-address{
+    @apply w-[231px];
+}
+.footer-address span{
+    @apply text-white font-semibold;
+}
+
+.footer-bottom{
+    @apply py-7 text-center text-[#807D74] text-sm leading-[26px];
+}
