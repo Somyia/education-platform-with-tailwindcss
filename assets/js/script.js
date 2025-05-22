@@ -12,7 +12,7 @@
     });
 
     $('.testimonial-carousel').slick({
-      autoplay: false,
+      autoplay: true,
       dots: true,  
       arrows:false,
       infinite: true,
